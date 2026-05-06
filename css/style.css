@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: #0d0d0d;
+    color: #fff;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #000;
+    position: sticky;
+    top: 0;
+  }
+  
+  .logo {
+    font-weight: 600;
+  }
+  
+  .menu a {
+    color: #ccc;
+    margin-left: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .menu a:hover {
+    color: #ff3c3c;
+  }
+  
+  .section {
+    padding: 70px 20px;
+    text-align: center;
+  }
+  
+  .destaque {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .overlay {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+  }
+  
+  .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #ff3c3c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.3s;
+  }
+  
+  .btn:hover {
+    background: #cc0000;
+    transform: scale(1.05);
+  }
+  
+  .container-filmes {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background: #1a1a1a;
+    padding: 25px;
+    width: 220px;
+    border-radius: 15px;
+    transition: 0.3s;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card:nth-child(2) {
+    border: 2px solid #ff3c3c;
+  }
+  
+  .card p::first-letter {
+    font-size: 20px;
+    color: #ff3c3c;
+  }
+
+  ::selection {
+    background: #ff3c3c;
+    color: #fff;
+  }
+  
+  .footer {
+    background: #000;
+    padding: 20px;
+    text-align: center;
+    color: #aaa;
+  }
